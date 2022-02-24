@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-
         BIO-DATA
-
     </title>
 </head>
 
@@ -42,23 +40,23 @@
         <tr>
             <td>Address:</td>
             <td>
-            <?php echo $_POST['address'] ?>
+                <?php echo $_POST['address'] ?>
             </td>
         </tr>
         <tr>
-            <td>PIN-CODE</td>
+            <td>Pin-Code</td>
             <td>
                 <?php echo $_POST['pincode']; ?>
             </td>
         </tr>
         <tr>
-            <td>EMAIL:</td>
+            <td>Email:</td>
             <td>
                 <?php echo $_POST['email']; ?>
             </td>
         </tr>
         <tr>
-            <td>PHONE:</td>
+            <td>Phone:</td>
             <td>
                 <?php echo $_POST['phnum']; ?>
             </td>
@@ -70,17 +68,26 @@
             </td>
         </tr>
         <tr>
-            <td>GENDER:</td>
+            <td>Gender:</td>
             <td>
                 <?php echo $_POST['gender']; ?>
             </td>
         </tr>
         <tr width="30">
-            <td>KNOWN LANGUAGE:</td>
-            <td>
-                <?php echo $_POST['lang[1]']; ?>
-            </td>
+            <td>Known Languages:</td>
+                <?php
+                if (isset($_POST['submit'])) {
+
+                    if (!empty($_POST['lang'])) {
+
+                        foreach ($_POST['lang'] as $value) {
+                            echo "<td>  $value, </td>";
+                        }
+                    }
+                }
+                ?>
         </tr>
     </table>
 </body>
+
 </html>

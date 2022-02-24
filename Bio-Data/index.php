@@ -24,15 +24,14 @@ Program : Bio-data generation php
         <input type="text" name="mothername"><br>
         <label for="bgroup">Blood Group:</label>
         <select name="bgroup">
-            <option value="nill" selected></option>
-            <option value="a+">A+</option>
-            <option value="a-">A-</option>
-            <option value="b+">B+</option>
-            <option value="b-">B+</option>
-            <option value="o+">O+</option>
-            <option value="0-">O-</option>
-            <option value="ab+">AB+</option>
-            <option value="ab-">AB-</option>
+            <option value="null" selected></option>
+            <?php
+                $bgroup = array('A+','A-','B+','B-','O+','O-','AB+','AB-');
+                foreach ($bgroup as $key) {
+                    $keylower=strtolower($key);
+                    echo "<option value=".$keylower.">".$key."</option>";
+                }
+            ?>
         </select><br>
         <label for="phnum">Phone Number:</label>
         <input type="tel" name="phnum"><br>
@@ -49,14 +48,18 @@ Program : Bio-data generation php
         <label for="pincode">Pincode:</label>
         <input type="number" name="pincode" placeholder="6 - - - - -"><br>
         <label for="gender">Language Known:</label>
-        <input type="checkbox" name="lang[]" value="english">English<br>
-        <input type="checkbox" name="lang[]" value="tamil">Tamil<br>
-        <input type="checkbox" name="lang[]" value="hindi">Hindi<br>
-        <input type="checkbox" name="lang[]" value="malayalam">Malayalam<br>
-        <input type="checkbox" name="lang[]" value="kannada">Kannada<br>
-        <input type="checkbox" name="lang[]" value="telugu">Telugu<br>
+        <input type="checkbox" name="colour[]" value="Red" checked>Red<br>
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
     </form>
 </body>
 </html>
+
+<!--
+    <input type="checkbox" name="lang[]" value="english">English<br>
+    <input type="checkbox" name="lang[]" value="tamil">Tamil<br>
+    <input type="checkbox" name="lang[]" value="hindi">Hindi<br>
+    <input type="checkbox" name="lang[]" value="malayalam">Malayalam<br>
+    <input type="checkbox" name="lang[]" value="kannada">Kannada<br>
+    <input type="checkbox" name="lang[]" value="telugu">Telugu<br>
+-->
