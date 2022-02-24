@@ -63,7 +63,7 @@ Program : java script to form validation
                 <input type="text" placeholder="Enter your name...." id="Firstname" max="15" autofocus required><br><br>
                 <label id="emailLabel"></label>
                 <input type="email" placeholder="email@gmail.com" id="email" required><br><br>
-                <input type="tel" id="phone" placeholder="Enter your phone number" max="10" required><br><br>
+                <input type="tel" id="phone" placeholder="Enter your phone number" pattern=[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2} max="10" required><br><br>
                 <input type="password" id="pass_one" placeholder="Enter your password...." max="10" required><br><br>
                 <input type="password" id="pass_two" placeholder="Confirm your password..." max="10" required><br><br>
                 <input type="reset" value="Reset">
