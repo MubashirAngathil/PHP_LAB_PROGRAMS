@@ -2,7 +2,7 @@
 Author: midlajc
 Date: 24-02-2022
 Time:12:41 PM
-Program: reverse given string 
+Program: mark list
  -->
 
 <!DOCTYPE html>
