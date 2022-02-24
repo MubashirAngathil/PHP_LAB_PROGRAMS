@@ -1,3 +1,10 @@
+/*
+Author  : Mubashir Angathil
+Date    : 24-02-2022
+Time    : 08:57 PM
+Program : Java script to find area and circumferences of a circle
+*/
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
