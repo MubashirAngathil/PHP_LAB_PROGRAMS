@@ -1,3 +1,10 @@
+/*
+Authour : Mubashir Angathil
+Date    : 25-02-2022
+Time    : 12:25 AM
+Program : java script to form validation
+*/
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,14 +65,17 @@
                 <input type="password" id="pass_two" placeholder="Confirm your password..." max="10" required><br><br>
                 <input type="reset" value="Reset">
                 <input type="submit" value="Submit" onclick=validation()>
+           
             </form>
         </section>
     </center>
     <script>
         function validation() {
             var name=document.getElementById("Firstname").value;
-
-            alert(name + "hello");
+           
+                alert("Max length 20!!");
+         
+            
         }
     </script>
 </body>
