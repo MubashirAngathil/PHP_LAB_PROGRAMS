@@ -55,19 +55,19 @@
             </td>
         </tr>
         <tr>
-            <th>PIN-CODE</th>
+            <th>Pin-Code</th>
             <td>
                 <?php echo $_POST['pincode']; ?>
             </td>
         </tr>
         <tr>
-            <th>EMAIL:</th>
+            <th>Email:</th>
             <td>
                 <?php echo $_POST['email']; ?>
             </td>
         </tr>
         <tr>
-            <th>PHONE:</th>
+            <th>Phone:</th>
             <td>
                 <?php echo $_POST['phnum']; ?>
             </td>
@@ -79,13 +79,13 @@
             </td>
         </tr>
         <tr>
-            <th>GENDER:</th>
+            <th>Gender:</th>
             <td>
                 <?php echo $_POST['gender']; ?>
             </td>
         </tr>
         <tr width="30">
-            <th>KNOWN LANGUAGE:</th>
+            <th>Known Language:</th>
             <td>
                 <?php echo $_POST['lang[1]']; ?>
             </td>
