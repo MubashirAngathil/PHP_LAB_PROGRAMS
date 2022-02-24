@@ -16,7 +16,6 @@ $user = mysqli_fetch_assoc($user);
 if ($user) {
     if ($user['password'] == $pass) {
         $_SESSION['user'] = $user;
-        // echo $_SESSION['user'];
         header("Location: index.php");
     } else {
         echo "<script>alert('password incorrect');location.replace('./');</script>";

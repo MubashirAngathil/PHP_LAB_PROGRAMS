@@ -1,7 +1,7 @@
 /*
 Authour : Mubashir Angathil
-Date    : 24-02-2022
-Time    : 08:31 PM
+Date : 24-02-2022
+Time : 08:31 PM
 Program : Write java program to create clock with a timing event
 */
 
@@ -13,7 +13,7 @@ Program : Write java program to create clock with a timing event
 
     <style>
         #clock {
-            font-size: 175px;
+            font-size: 170px;
             width: 900px;
             margin: 200px;
             text-align: center;
@@ -30,27 +30,15 @@ Program : Write java program to create clock with a timing event
         setInterval(showTime, 1000);
 
         function showTime() {
-            let time = new Date();
-            let hour = time.getHours();
-            let min = time.getMinutes();
-            let sec = time.getSeconds();
-            am_pm = "AM";
-
-            if (hour > 12) {
-                hour -= 12;
-                am_pm = "PM";
-            }
-            if (hour == 0) {
-                hr = 12;
-                am_pm = "AM";
+            const date = new Date();
+            const timeOption = {
+                hour: 'numeric',
+                minute: 'numeric',
+                hour12: true,
+                second: 'numeric'
             }
 
-            hour = hour < 10 ? "0" + hour : hour;
-            min = min < 10 ? "0" + min : min;
-            sec = sec < 10 ? "0" + sec : sec;
-
-            let currentTime = hour + ":" +
-                min + ":" + sec + am_pm;
+            let currentTime = date.toLocaleString('en-US', timeOption);
 
             document.getElementById("clock")
                 .innerHTML = currentTime;
