@@ -5,5 +5,5 @@ create test.users(
     password varchar(20) not null
 )
 
-insert into test.mark_list
+insert into test.users
 values("1","midlajc","MIDLAJ C","password");
