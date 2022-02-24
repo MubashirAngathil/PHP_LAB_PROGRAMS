@@ -79,7 +79,7 @@ Program : Bio-data generation php
                 ?>
             </select><br><br>
             <label for="phnum">Phone Number&nbsp;&nbsp;&nbsp;:</label>
-            <input type="tel" name="phnum"><br><br><br>
+            <input type="tel" name="phnum" pattern=[0-9]{3}-[0-9]{2}-[0-9]{3}><br><br><br>
             <label for="email">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;:</label>
             <input type="email" name="email"><br><br>
