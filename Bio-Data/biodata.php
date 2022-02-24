@@ -5,87 +5,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        BIO-DATA
-    </title>
+    <title> BIO-DATA </title>
+<style>
+   table{
+    background: whitesmoke;
+    border: 0;
+    margin-left: 20rem;
+   } 
+  table th{
+      padding: 1rem;
+      background: gray;
+      color: white;
+  }
+</style>
+   
 </head>
 
-<body>
+<body align="center">
     <h1>BIO-DATA</h1>
-    <table border="1" width="600" align="center" bgcolor="brown">
+    <table border="1" width="600" >
         <tr>
-            <td>Name:</td>
+            <th>Name:</th>
             <td>
                 <?php echo $_POST['fullname']; ?>
             </td>
         </tr>
         <tr>
-            <td>Father's Name:</td>
+            <th>Father's Name:</th>
             <td>
                 <?php echo $_POST['fathername']; ?>
             </td>
         </tr>
         <tr>
-            <td>Mother's Name:</td>
+            <th>Mother's Name:</th>
             <td>
                 <?php echo $_POST['mothername']; ?>
             </td>
         </tr>
         <tr>
-            <td>Blood Group:</td>
+            <th>Blood Group:</th>
             <td>
                 <?php echo $_POST['bgroup']; ?>
             </td>
         </tr>
         <tr>
-            <td>Address:</td>
+            <th>Address:</th>
             <td>
                 <?php echo $_POST['address'] ?>
             </td>
         </tr>
         <tr>
-            <td>Pin-Code</td>
+            <th>PIN-CODE</th>
             <td>
                 <?php echo $_POST['pincode']; ?>
             </td>
         </tr>
         <tr>
-            <td>Email:</td>
+            <th>EMAIL:</th>
             <td>
                 <?php echo $_POST['email']; ?>
             </td>
         </tr>
         <tr>
-            <td>Phone:</td>
+            <th>PHONE:</th>
             <td>
                 <?php echo $_POST['phnum']; ?>
             </td>
         </tr>
         <tr>
-            <td>D.O.B:</td>
+            <th>D.O.B:</th>
             <td>
                 <?php echo $_POST['dob']; ?>
             </td>
         </tr>
         <tr>
-            <td>Gender:</td>
+            <th>GENDER:</th>
             <td>
                 <?php echo $_POST['gender']; ?>
             </td>
         </tr>
         <tr width="30">
-            <td>Known Languages:</td>
-                <?php
-                if (isset($_POST['submit'])) {
-
-                    if (!empty($_POST['lang'])) {
-
-                        foreach ($_POST['lang'] as $value) {
-                            echo "<td>  $value, </td>";
-                        }
-                    }
-                }
-                ?>
+            <th>KNOWN LANGUAGE:</th>
+            <td>
+                <?php echo $_POST['lang[1]']; ?>
+            </td>
         </tr>
     </table>
 </body>
