@@ -6,24 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> BIO-DATA </title>
-<style>
-   table{
-    background: whitesmoke;
-    border: 0;
-    margin-left: 20rem;
-   } 
-  table th{
-      padding: 1rem;
-      background: gray;
-      color: white;
-  }
-</style>
-   
+    <style>
+        table {
+            background: whitesmoke;
+            border: 0;
+            margin-left: 20rem;
+        }
+
+        table th {
+            padding: 1rem;
+            background: gray;
+            color: white;
+        }
+    </style>
+
 </head>
 
 <body align="center">
     <h1>BIO-DATA</h1>
-    <table border="1" width="600" >
+    <table border="1" width="600">
         <tr>
             <th>Name:</th>
             <td>
@@ -87,7 +88,11 @@
         <tr width="30">
             <th>Known Language:</th>
             <td>
-                <?php echo $_POST['lang[1]']; ?>
+                <?php
+                print_r($_POST['lang']);
+                $langs = implode(',', $_POST['lang']);
+                echo $langs;
+                ?>
             </td>
         </tr>
     </table>
