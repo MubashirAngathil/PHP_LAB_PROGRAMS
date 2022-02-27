@@ -89,7 +89,6 @@
             <th>Known Language:</th>
             <td>
                 <?php
-                print_r($_POST['lang']);
                 $langs = implode(',', $_POST['lang']);
                 echo $langs;
                 ?>
