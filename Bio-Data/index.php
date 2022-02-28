@@ -171,12 +171,12 @@ Program : Bio-data generation php
 
                     </th>
                     <td>
-                        <input type="checkbox" name="lang[]" value="english">English
-                        <input type="checkbox" name="lang[]" value="tamil">Tamil
-                        <input type="checkbox" name="lang[]" value="hindi">Hindi
-                        <input type="checkbox" name="lang[]" value="malayalam">Malayalam
-                        <input type="checkbox" name="lang[]" value="kannada">Kannada
-                        <input type="checkbox" name="lang[]" value="telugu">Telugu
+                        <input type="checkbox" name="lang[]" value="English">English
+                        <input type="checkbox" name="lang[]" value="Tamil">Tamil
+                        <input type="checkbox" name="lang[]" value="Hindi">Hindi
+                        <input type="checkbox" name="lang[]" value="Malayalam">Malayalam
+                        <input type="checkbox" name="lang[]" value="Kannada">Kannada
+                        <input type="checkbox" name="lang[]" value="Telugu">Telugu
                     </td>
                 </tr>
             </table>
