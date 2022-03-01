@@ -1,7 +1,7 @@
 <!--
 Author  : midlajc
-Date    : 28-02-2022
-Time    : 10:47 PM
+Date    : 01-03-2022
+Time    : 11:39 AM
 Program : php program to store current date time in cookie and display the last visited date time on the web page upon revisiting same web page
 -->
 
@@ -18,7 +18,7 @@ Program : php program to store current date time in cookie and display the last 
 <body>
     <?php
     include_once 'header.php';
-    echo "<br/>Last Visited Time:" . $_COOKIE['home'];
+    echo "<br/>Home<br/><br/>Last Visited Time:" . $_COOKIE['home'];
     setcookie("home", date("Y-m-d h:i:sa"), time() + (10 * 365 * 24 * 60 * 60))
     ?>
 </body>

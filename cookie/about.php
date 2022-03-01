@@ -9,7 +9,7 @@
 <body>
 <?php
     include_once 'header.php';
-    echo "<br/>Last Visited Time:" . $_COOKIE['about'];
+    echo "<br/>About<br/><br/>Last Visited Time:" . $_COOKIE['about'];
     setcookie("about", date("Y-m-d h:i:sa"), time() + (10 * 365 * 24 * 60 * 60))
     ?>
 </body>
