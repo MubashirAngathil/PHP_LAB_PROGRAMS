@@ -23,7 +23,7 @@ Program : Bio-data generation php
         }
 
         select {
-            width: 12rem;
+            width: 22rem;
             padding: .5rem;
         }
 
@@ -51,7 +51,9 @@ Program : Bio-data generation php
         [type="date"],
         [type="number"] {
             padding: 1rem;
-            width: 9.7rem
+            width: 20rem;
+            height:0.1rem;
+            margin-top: 1rem;;
         }
 
         .table {
@@ -60,6 +62,9 @@ Program : Bio-data generation php
 
         th {
             width: 20%;
+        }
+        h1{
+            font-size: 3rem;;
         }
     </style>
 </head>
@@ -152,7 +157,7 @@ Program : Bio-data generation php
                         <label for="address" id="txtarea">Address:</label>
                     </th>
                     <td>
-                        <textarea name="address" id="address" cols="30" rows="5" placeholder=" Type your address here....."></textarea><br><br>
+                        <textarea name="address" id="address" cols="45" rows="5" placeholder=" Type your address here....."></textarea><br><br>
                     </td>
                 </tr>
                 <tr>
