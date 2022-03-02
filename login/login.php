@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+require_once 'session.php';
+
+if ($_SESSION['user'])
+    header("Location: index.php");
+?>
 
 <head>
     <meta charset="UTF-8">

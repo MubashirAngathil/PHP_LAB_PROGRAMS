@@ -23,6 +23,7 @@ if (!$_SESSION['user'])
 
 <body style="text-align: center;">
     <h1>Login as <?php echo $_SESSION['user']['name']; ?></h1>
+    <h4><a href="logout.php">logout</a></h4>
 </body>
 
 </html>
