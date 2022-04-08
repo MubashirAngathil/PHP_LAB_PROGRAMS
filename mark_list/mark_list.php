@@ -45,7 +45,7 @@
                     $html = "<tr><td>" . $row['reg_no'] . "</td><td>"
                         . $row['name'] . "</td><td>" . $row['sem'] .
                         "</td><td>" . $row['mark'] . "</td><td>" .
-                        $row['mark'] . "</td></tr>";
+                        $row['grade'] . "</td></tr>";
                     echo $html;
                 }
                 ?>
